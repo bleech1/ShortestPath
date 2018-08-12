@@ -30,8 +30,8 @@ def OpenExcel(workbookName, worksheetName):
     return worksheet, numRows, numCols
     
 def InitializePoints(numRows):
-    for row in range(numRows):
-        p = point(INF, False, "")
+    for i in range(numRows):
+        p = point(i + 1, INF, False, "")
         points.append(p)
     
 def ResetPoints():
